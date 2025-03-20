@@ -1,0 +1,41 @@
+@media screen and (max-width: 375px) {
+    .button{
+        position: absolute;
+        color: #707070;
+        font-weight: 700;
+        width: 24%;
+        height: 4.6vh;
+        text-align: center;
+        border:1px solid #707070;
+        border-radius: 10px;
+        left: 69.0vw;
+        background: linear-gradient(45deg,#F2EDE9, #DED8D3);
+    }
+}
+@media screen and (min-width: 376px)and (max-width: 834px) {
+    .button{
+        color: #707070;
+        font-weight: 700;
+        width: 13.6vw;
+        height: 4.6vh;
+        text-align: center;
+        border:1px solid #707070;
+        border-radius: 10px;
+        margin-left: 0.9vw;
+        background: linear-gradient(45deg,#F2EDE9, #DED8D3);
+    }
+}
+
+@media screen and (min-width: 835px) {
+    .button{
+        color: #707070;
+        font-weight: 700;
+        width: 7.08vw;
+        height: 4.6vh;
+        text-align: center;
+        border:1px solid #707070;
+        border-radius: 10px;
+        margin-left: 0.9vw;
+        background: linear-gradient(45deg,#F2EDE9, #DED8D3);
+    }
+}

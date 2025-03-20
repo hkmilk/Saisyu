@@ -1,0 +1,232 @@
+// sp
+@media screen and (max-width: 375px){
+
+    $btnWidth: 45.25px;
+    $btnHeight: 6px;
+
+.l-drawer-menu {
+    top: 8px;
+    position: absolute;
+    right: 43px;
+    font-size: 0px;
+}  
+.l-drawer-menu::before,
+.l-drawer-menu::after {
+    content: "";
+    width: $btnWidth;
+    height: $btnHeight;
+    position: absolute;
+    background-color: #707070;
+}
+.l-drawer-menu::before{
+    position: absolute;
+    top: 20px;
+    left: 0%;
+    right: 2.5vw;
+    transform: rotate(-135deg);
+}
+.l-drawer-menu::after{
+    position: absolute;
+    top: 20px;
+    left: 0%;
+    right: 2.5vw;
+    transform: rotate(-45deg);
+}
+.l-aside{
+    background-color: #F2EDE9;
+    transition: all 300ms 0s ease;
+    width: 87.4%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    overflow-y: auto;
+    overflow-x: hidden;
+    left: 100%;
+}
+.l-aside.is-open{
+     left: 12.5vw;
+ }
+ body.is-open{
+    position: fixed;
+    overflow: hidden;
+ }
+.overlay{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    background-color: #00000080;
+    position: absolute;
+    top:  0;
+    left: 0;
+    z-index: 500;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.overlay.is-open{
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+}
+
+.l-aside__container{
+    position: absolute;
+    top: 17.8vh;
+}
+.l-aside-list{
+    padding-left: 14%;
+    font-size: 24px;
+    list-style: none;
+    font-weight: 700;
+    color: #707070;
+}
+
+.l-aside-list__item {
+    padding-left: 20vw;
+    padding-top: 4.0vh;
+    padding-bottom: 6.0vh;
+    font-size: 20px;
+    font-weight: 400;
+    color: #707070;
+
+}
+.l-aside-list__item > li{
+    padding: 0.7vh;
+}
+}
+
+// tb
+@media screen and (min-width: 376px)and (max-width: 834px){
+
+    $btnWidth: 45.25px;
+    $btnHeight: 6px;
+
+.l-drawer-menu {
+    top: 29px;
+    position: absolute;
+    left: 28.5vw;
+    font-size: 0px;
+}  
+.l-drawer-menu::before,
+.l-drawer-menu::after {
+    content: "";
+    width: $btnWidth;
+    height: $btnHeight;
+    position: absolute;
+    background-color: #707070;
+}
+.l-drawer-menu::before{
+    position: absolute;
+    top: 20px;
+    left: 0%;
+    right: 2.5vw;
+    transform: rotate(-135deg);
+}
+.l-drawer-menu::after{
+    position: absolute;
+    top: 20px;
+    left: 0%;
+    right: 2.5vw;
+    transform: rotate(-45deg);
+}
+.l-aside{
+    background-color: #F2EDE9;
+    transition: all 300ms 0s ease;
+    width: 44%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    overflow-y: auto;
+    overflow-x: hidden;
+    left: 100%;
+}
+.l-aside.is-open{
+     left: 60vw;
+ }
+ body.is-open{
+    position: fixed;
+    overflow: hidden;
+ }
+.overlay{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    background-color: #00000080;
+    position: absolute;
+    top:  0;
+    left: 0;
+    z-index: 500;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.overlay.is-open{
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+}
+
+.l-aside__container{
+    position: absolute;
+    top: 17.8vh;
+}
+.l-aside-list{
+    padding-left: 4.6vw;
+    font-size: 24px;
+    list-style: none;
+    font-weight: 700;
+    color: #707070;
+}
+
+.l-aside-list__item {
+    padding-left: 6.6vw;
+    padding-top: 3.2vh;
+    padding-bottom: 4.8vh;
+    font-size: 20px;
+    font-weight: 400;
+    color: #707070;
+
+}
+.l-aside-list__item > li{
+    padding: 0.7vh;
+}
+}
+
+// pc
+@media screen and (min-width: 835px) {
+    .l-aside{
+    grid-row: 1 / 5;
+	grid-column: 4 / 5;
+    background-color: #F2EDE9;
+    padding-left: 12.5%;
+}
+.l-button__menu {
+    font-size: 34px;
+    font-family: "Roboto";
+    font-weight: 700;
+    color: #707070;
+    padding-top: 8.4vh;
+    padding-bottom: 9.0vh;
+}
+.l-aside-list{
+    font-size: 24px;
+    list-style: none;
+    font-weight: 700;
+    color: #707070;
+}
+.l-aside-list__item {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 3.2vh;
+    padding-left: 0.66vw;
+    padding-bottom: 4.8vh;
+    color: #707070;
+}
+.l-aside-list__item > li{
+    padding: 0.7vh;
+}
+}
