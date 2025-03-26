@@ -22,8 +22,8 @@
 @media screen and (min-width:  835px) {
     .l-grid-container{
         display: grid;
-        grid-template-columns: 6.25vw 1fr 6.25vw 19.2vw;
-        grid-template-rows: 21.7vh auto 1fr 64.9vh 15.0vh;
+        grid-template-columns: 6.25% 1fr 6.25% 19.1vw;
+        grid-template-rows: 21.7vh auto auto 64.9vh 15.0vh;
         min-height: 100vh;
     }
 }

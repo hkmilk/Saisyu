@@ -544,30 +544,32 @@ h3{
     display: flex;
     position: relative;
     width: 100%;
-    gap: 4.2vw;
-
+    gap: 4.8%;
+    align-items: stretch;
 }
 
 .l-section__main{                
 	grid-column: 2 / 3;
     display: flex;
+    align-items: stretch;
     flex-direction: column;
-    overflow: hidden;
     z-index: 10;
     position: relative;
-    width: 32vw;
+    width: 100%;
 
 }
-
+.l-section__image{
+    align-items: stretch;
+    width: 100%;
+    min-height: 100%;
+}
 
 .l-section__image img{
-    grid-column: 2 / 3;
-    justify-self: start;
     object-fit: cover;
-    width: 32vw;
-    height: 1197px;
+    width: 100%;
+    min-height:1197px;
     padding: 120px 0;
-    aspect-ratio: 616 / 1197;
+    height: 100%;
 }
 .l-section__main img:nth-of-type(2n) {
     padding-right: 120px;
@@ -582,7 +584,7 @@ h3{
     z-index: 50;
     position: absolute;
     color: #EAEAEA;
-    font-size: 80px;
+    font-size: 51.7%;
     font-weight: 700;
     font-family:"Roboto";
     white-space: nowrap;
@@ -597,23 +599,15 @@ h3{
     width: 63px;
 }
 
-.l-card__wrapper{
+.l-container{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    height: auto;
     z-index: 60;
     bottom: 10%;
     color: #3C2A10;
-    position: absolute;
-    width: 100%;
+    position: relative;
     flex-grow: 1;
-    align-items: center;
-}
-.l-container{
-	grid-column: 2 / 3;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    gap: 4.2vw;
+    align-items: stretch;
 }
 .l-container:nth-of-type(2n){
     margin-top: 0;
@@ -622,11 +616,7 @@ h3{
 .l-card__main{
 	grid-column: 2 / 3;
     align-items: stretch;
-    flex-grow: 1;
-    margin: 1.6%;
-    min-height: 10vh;
     text-align: start;
-    width: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     box-sizing: border-box;
 }
@@ -637,14 +627,12 @@ h3{
 .l-card__textPc {
     display: flex;
     padding: 0 1.6% 1.6% 1.6%;
-    flex-grow: 1
-    
+    flex-grow: 1 
 }
 .l-card__textTb {
     display: none;
 }
-.l-card__titleSp,
-.l-card__textSp{
+.l-card__mainSp{
     display: none;
 }
 
@@ -754,5 +742,4 @@ h3{
     height: 64.9vh;
     overflow: hidden;
 }
-
 }

@@ -1,6 +1,7 @@
 html {
   width: 100%;
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 * {
@@ -61,8 +62,8 @@ a {
 @media screen and (min-width: 835px) {
   .l-grid-container {
     display: grid;
-    grid-template-columns: 6.25vw 1fr 6.25vw 19.2vw;
-    grid-template-rows: 21.7vh auto 1fr 64.9vh 15vh;
+    grid-template-columns: 6.25% 1fr 6.25% 19.1vw;
+    grid-template-rows: 21.7vh auto auto 64.9vh 15vh;
     min-height: 100vh;
   }
 }
@@ -655,26 +656,30 @@ a {
     display: flex;
     position: relative;
     width: 100%;
-    gap: 4.2vw;
+    gap: 4.8%;
+    align-items: stretch;
   }
   .l-section__main {
     grid-column: 2/3;
     display: flex;
+    align-items: stretch;
     flex-direction: column;
-    overflow: hidden;
     z-index: 10;
     position: relative;
-    width: 32vw;
+    width: 100%;
+  }
+  .l-section__image {
+    align-items: stretch;
+    width: 100%;
+    min-height: 100%;
   }
   .l-section__image img {
-    grid-column: 2/3;
-    justify-self: start;
     -o-object-fit: cover;
        object-fit: cover;
-    width: 32vw;
-    height: 1197px;
+    width: 100%;
+    min-height: 1197px;
     padding: 120px 0;
-    aspect-ratio: 616/1197;
+    height: 100%;
   }
   .l-section__main img:nth-of-type(2n) {
     padding-right: 120px;
@@ -686,7 +691,7 @@ a {
     z-index: 50;
     position: absolute;
     color: #EAEAEA;
-    font-size: 80px;
+    font-size: 51.7%;
     font-weight: 700;
     font-family: "Roboto";
     white-space: nowrap;
@@ -699,23 +704,15 @@ a {
     border-bottom: 4px solid #FFF;
     width: 63px;
   }
-  .l-card__wrapper {
+  .l-container {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    height: auto;
     z-index: 60;
     bottom: 10%;
     color: #3C2A10;
-    position: absolute;
-    width: 100%;
+    position: relative;
     flex-grow: 1;
-    align-items: center;
-  }
-  .l-container {
-    grid-column: 2/3;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    gap: 4.2vw;
+    align-items: stretch;
   }
   .l-container:nth-of-type(2n) {
     margin-top: 0;
@@ -723,11 +720,7 @@ a {
   .l-card__main {
     grid-column: 2/3;
     align-items: stretch;
-    flex-grow: 1;
-    margin: 1.6%;
-    min-height: 10vh;
     text-align: start;
-    width: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     box-sizing: border-box;
   }
@@ -742,8 +735,7 @@ a {
   .l-card__textTb {
     display: none;
   }
-  .l-card__titleSp,
-.l-card__textSp {
+  .l-card__mainSp {
     display: none;
   }
   h3 {
@@ -1272,8 +1264,13 @@ a {
     left: 8.2%;
     border: 1px solid #707070;
     border-radius: 10px;
-    background: url(../images/mushimegane.png) no-repeat 8px 14px;
+    background: url(../images/mushimegane.png) no-repeat;
+    background-position: 8px center;
+    background-size: 16px 16px;
     background-color: #FFFFFF;
+    padding-left: 32px;
+    line-height: 4, 6vh;
+    vertical-align: middle;
   }
   input[type=text] {
     color: #707070;
@@ -1288,8 +1285,13 @@ a {
     height: 4.6vh;
     border: 1px solid #707070;
     border-radius: 10px;
-    background: url(../images/mushimegane.png) no-repeat 8px 14px;
+    background: url(../images/mushimegane.png) no-repeat;
+    background-position: 8px center;
+    background-size: 16px 16px;
     background-color: #FFFFFF;
+    padding-left: 32px;
+    line-height: 4.6vh;
+    vertical-align: middle;
   }
   input[type=text] {
     color: #707070;
@@ -1304,8 +1306,13 @@ a {
     height: 4.6vh;
     border: 1px solid #707070;
     border-radius: 10px;
-    background: url(../images/mushimegane.png) no-repeat 8px 14px;
+    background: url(../images/mushimegane.png) no-repeat;
+    background-position: 8px center;
+    background-size: 16px 16px;
     background-color: #FFFFFF;
+    padding-left: 32px;
+    line-height: 4.6vh;
+    vertical-align: middle;
   }
   input[type=text] {
     color: #707070;
