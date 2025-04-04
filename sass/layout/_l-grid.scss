@@ -1,29 +1,45 @@
+   /*   SP    */
 @media screen and (max-width: 375px){
     .l-grid-container{
         display: grid;
         grid-template-columns: 5.3% 1fr 5.3%;
-        grid-template-rows: 21.5vh auto 1fr minmax(69.1vh, auto) 15.0vh;
+        grid-template-rows:
+        21.5vh
+        auto
+        auto
+        auto
+        15.0vh;
         min-height: 100vh;
         max-width: 100vw;
     }
 }
-
+   /*   TB    */
 @media screen and (min-width: 376px)and (max-width: 834px){
     .l-grid-container{
         display: grid;
         grid-template-columns: 4.79vw 1fr 4.79vw;
-        grid-template-rows: 21.7vh auto 1fr minmax(41.5vh, auto) 14.9vh;
+        grid-template-rows:
+        21.7vh
+        auto
+        auto
+        auto
+        14.9vh;
         min-height: 100vh;
         max-width: 100vw;
     }
 }
 
-
+   /*   PC    */
 @media screen and (min-width:  835px) {
     .l-grid-container{
         display: grid;
-        grid-template-columns: 6.25% 1fr 6.25% 19.1vw;
-        grid-template-rows: 21.7vh auto auto 64.9vh 15.0vh;
+        grid-template-columns: 6.25vw 1fr 6.25vw 19.1vw;
+        grid-template-rows:
+        21.7vh 
+        auto
+        auto
+        auto
+        15.0vh;
         min-height: 100vh;
     }
 }

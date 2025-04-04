@@ -1,3 +1,4 @@
+   /*   SP    */
 @media screen and (max-width: 375px){
     .l-header {
         grid-row: 1 / 2;
@@ -31,7 +32,7 @@
         color: #707070;
     }
 }
-
+   /*   TB    */
 @media screen and (min-width: 376px)and (max-width: 834px){
     .l-header {
         grid-row: 1 / 2;
@@ -67,7 +68,7 @@
         color: #707070;
     }
 }
-
+   /*   PC    */
 @media screen and (min-width: 835px) {
 .l-header {
     grid-row: 1 / 2;

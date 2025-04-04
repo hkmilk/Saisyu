@@ -1,7 +1,6 @@
 html{
     width: 100%;
-    font-size: 62.5%;
-    overflow-x: hidden;
+    font-size: 1vw;
 }
 * {
     margin: 0;
@@ -13,9 +12,10 @@ body{
     margin:0;
     padding: 0;
     background-color: #FFFFFF;
-    font-size: 1.6rem;
+    font-size: clamp(16px, 1.6rem, 20px);
     color: #121212;
     line-height: 1.485;
+    overflow-x: hidden;
 }
 img {
     width: 100%;

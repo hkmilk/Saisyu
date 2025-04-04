@@ -1,4 +1,4 @@
-// sp
+   /*   SP    */
 @media screen and (max-width: 375px){
 
     $btnWidth: 45.25px;
@@ -97,7 +97,7 @@
 }
 }
 
-// tb
+   /*   TB    */
 @media screen and (min-width: 376px)and (max-width: 834px){
 
     $btnWidth: 45.25px;
@@ -196,13 +196,14 @@
 }
 }
 
-// pc
+   /*   PC    */
 @media screen and (min-width: 835px) {
     .l-aside{
     grid-row: 1 / 5;
 	grid-column: 4 / 5;
     background-color: #F2EDE9;
     padding-left: 12.5%;
+    height: 100%;
 }
 .l-button__menu {
     font-size: 34px;
