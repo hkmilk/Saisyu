@@ -477,10 +477,10 @@ a {
   }
   .l-container__bg::before {
     left: 0;
-    background-image: url(/images/Tbthree-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
+    background-image: url("../images/Tbthree-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png");
   }
   .l-container__bg::after {
-    background-image: url(/images/Tb473d814b175bd517b56eb309f2958725.png);
+    background-image: url("../images/Tb473d814b175bd517b56eb309f2958725.png");
     right: 0;
   }
   .l-txtBox__left,
@@ -698,10 +698,10 @@ a {
   }
   .l-container__bg::before {
     left: 0;
-    background-image: url(/images/_three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
+    background-image: url("../images/Pc_three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png");
   }
   .l-container__bg::after {
-    background-image: url(/images/_473d814b175bd517b56eb309f2958725.png);
+    background-image: url("../images/Pc_473d814b175bd517b56eb309f2958725.png");
     right: 0;
   }
   .l-txtBox__left,
@@ -754,6 +754,7 @@ a {
     -o-object-fit: cover;
        object-fit: cover;
     overflow-y: hidden;
+    box-sizing: content-box;
   }
   .script {
     width: 100%;
@@ -773,7 +774,7 @@ a {
 .l-map__textContainer p {
     color: #FFFFFF;
     left: 6.25vw;
-    width: clamp(40%, 100vw, 55%);
+    width: clamp(40%, 40vw, 55%);
     z-index: 110;
     position: relative;
   }
