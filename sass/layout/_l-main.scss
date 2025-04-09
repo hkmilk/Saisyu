@@ -68,15 +68,15 @@
     margin-top: 5px;
 }
 .l-container {
+    display: block;
     position: relative;
     padding-top: 2vh;
 }
 .l-txtBox__left,
 .l-txtBox__right {
     display: grid;
+    grid-template-rows: 29.8vh auto auto;
     width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3 ,1fr);
     position: relative;
     align-items: stretch;
 }
@@ -308,14 +308,11 @@ p{
 }
 
 .l-container {
-            display: grid;
-            grid-auto-flow: column;
-            grid-template-rows: 1fr 1fr; 
-            grid-template-columns: repeat(2, 1fr);
-            grid-column-gap: 4.8%;
-            width: 100%;
-            position: relative; 
-            margin-top: 38.1vh;
+    display: flex;
+    grid-column-gap: 4.8%;
+    position: relative;
+    margin-top: 38.1vh;
+    align-items: flex-end;
 }
 
 .l-container__bg::before, 
@@ -342,7 +339,8 @@ p{
 
 .l-txtBox__left,
 .l-txtBox__right{
-     display: contents;     
+     display: block;
+     width: 100%;     
 }
 .l-card__main{
     display: block;
@@ -541,14 +539,11 @@ h3{
 }
 
 .l-container {
-            display: grid;
-            grid-auto-flow: column;
-            grid-template-rows: 1fr 1fr; 
-            grid-template-columns: repeat(2, 1fr);
-            grid-column-gap: 4.8%;
-            width: 100%;
-            position: relative; 
-            margin-top: 83.9vh;
+    display: flex;
+    grid-column-gap: 4.8%;
+    position: relative;
+    margin-top: 83.9vh;
+    align-items: flex-end;
 }
 
 .l-container__bg::before, 
@@ -575,7 +570,8 @@ h3{
 
 .l-txtBox__left,
 .l-txtBox__right{
-     display: contents;     
+     display: block;
+     width: 100%;  
 }
 .l-card__main{
     display: block;
@@ -604,6 +600,7 @@ h3{
     grid-row: 4 / 5;
 	grid-column: 1 / 4;
     background-color: rgba(0, 0, 0, 0.4); 
+    position: relative;
 }
 
 #l-map {
@@ -613,8 +610,8 @@ h3{
     z-index: -1;
     flex-grow: 1 / -1;
     object-fit: cover;
-    position: relative;
-    top: -100%;
+    position: absolute;
+    top: 0;
 }
 #l-map::before{
     position: absolute;
