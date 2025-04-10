@@ -70,7 +70,7 @@
 .l-container {
     display: block;
     position: relative;
-    padding-top: 2vh;
+    padding-top: 6%;
 }
 .l-txtBox__left,
 .l-txtBox__right {
@@ -269,7 +269,7 @@ p{
     grid-row: 3 / 4;
     grid-column: 2 / 3;
     position: relative;
-    margin: clamp(1.9vh, 25px ,4.0vh) 0;
+    margin: 5.5% 0;
 }
 .l-container__bg {
     position: absolute;
@@ -500,7 +500,7 @@ h3{
     grid-row: 3 / 4;
     grid-column: 2 / 3;
     position: relative;
-    margin: 12vh 0;
+    margin: 9% 0;
 }
 .l-container__bg {
     position: absolute;

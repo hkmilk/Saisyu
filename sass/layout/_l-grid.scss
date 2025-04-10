@@ -17,7 +17,7 @@
 @media screen and (min-width: 376px)and (max-width: 834px){
     .l-grid-container{
         display: grid;
-        grid-template-columns: 4.79vw 1fr 4.79vw;
+        grid-template-columns: 4.79% 1fr 4.79%;
         grid-template-rows:
         21.7vh
         auto
@@ -33,7 +33,7 @@
 @media screen and (min-width:  835px) {
     .l-grid-container{
         display: grid;
-        grid-template-columns: 6.25vw 1fr 6.25vw 19.1vw;
+        grid-template-columns: 6.25% 1fr 6.25% 19.1vw;
         grid-template-rows:
         21.7vh 
         auto

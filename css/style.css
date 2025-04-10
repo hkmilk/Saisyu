@@ -54,7 +54,7 @@ a {
 @media screen and (min-width: 376px) and (max-width: 834px) {
   .l-grid-container {
     display: grid;
-    grid-template-columns: 4.79vw 1fr 4.79vw;
+    grid-template-columns: 4.79% 1fr 4.79%;
     grid-template-rows: 21.7vh auto auto auto 14.9vh;
     min-height: 100vh;
     max-width: 100vw;
@@ -64,7 +64,7 @@ a {
 @media screen and (min-width: 835px) {
   .l-grid-container {
     display: grid;
-    grid-template-columns: 6.25vw 1fr 6.25vw 19.1vw;
+    grid-template-columns: 6.25% 1fr 6.25% 19.1vw;
     grid-template-rows: 21.7vh auto auto auto 15vh;
     min-height: 100vh;
   }
@@ -225,7 +225,7 @@ a {
   .l-container {
     display: block;
     position: relative;
-    padding-top: 2vh;
+    padding-top: 6%;
   }
   .l-txtBox__left,
 .l-txtBox__right {
@@ -418,7 +418,7 @@ a {
     grid-row: 3/4;
     grid-column: 2/3;
     position: relative;
-    margin: clamp(1.9vh, 25px, 4vh) 0;
+    margin: 5.5% 0;
   }
   .l-container__bg {
     position: absolute;
@@ -637,7 +637,7 @@ a {
     grid-row: 3/4;
     grid-column: 2/3;
     position: relative;
-    margin: 12vh 0;
+    margin: 9% 0;
   }
   .l-container__bg {
     position: absolute;
