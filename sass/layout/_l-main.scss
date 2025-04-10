@@ -269,7 +269,7 @@ p{
     grid-row: 3 / 4;
     grid-column: 2 / 3;
     position: relative;
-    margin: 4vh 0;
+    margin: clamp(1.9vh, 25px ,4.0vh) 0;
 }
 .l-container__bg {
     position: absolute;

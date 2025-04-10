@@ -86,7 +86,7 @@
 .l-header__logo a{
     font-family: "Roboto";
     font-weight: 700;
-    font-size: 64px;
+    font-size: clamp(40px,6.4rem,64px);
     color: #707070;
 }
 .l-button__tb{

@@ -1,9 +1,10 @@
 @media screen and (max-width: 375px) {
     .c-form{
             padding-bottom: 3.9vh;
+            display: flex;
         }
         .search{
-            width: 57.6vw;
+            width:clamp(10vw, 216px, 50vw);
             height: 4.6vh;
             position: absolute;
             left: 8.2%;
