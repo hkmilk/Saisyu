@@ -1,0 +1,191 @@
+   /*   SP    */
+   @media screen and (max-width: 375px){
+    .c-pagination--wrapper{
+        grid-row: 5 / 6;
+        grid-column: 2 / 3;
+        display: flex;
+        justify-content: space-between;
+        color: #707070;
+        margin-bottom: 3.2vh;
+        width: 100%;
+    }
+    .c-pagination__content{
+        display: flex;
+        height: 100%;
+     }
+
+    .c-pagination--sp {
+        display: flex;
+        width: auto;
+        height: auto;
+        text-align: center;
+        }
+        .c-pagination--sp a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+      
+    .c-pagination__icon{
+        min-width: 24px;
+        min-height: 24px;
+            width: 24px;
+            height: 24px;
+            stroke: currentColor; 
+            vertical-align: middle;
+            margin-left: 1.9vw;
+            margin-right: 1.7vw;
+            overflow: visible;
+    }
+    .c-pagination__status{
+        display: none;
+    }
+    .c-pagination{
+        display: none;
+        } 
+   } 
+ 
+ /*   TB    */
+@media screen and (min-width: 376px)and (max-width: 834px){
+    .c-pagination--wrapper{
+        grid-row: 5 / 6;
+        grid-column: 2 / 3;
+        display: flex;
+        justify-content: center;
+        color: #707070;
+        align-items: baseline;
+        margin-bottom: 3.2vh;
+        width: 100%;
+    }
+    .c-pagination{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+     }
+    .c-pagination__item{
+        list-style: none;
+        margin-right: 1.5vw;
+        width: 3.5vw;
+        aspect-ratio: 1 / 1;
+        border: 1px solid #707070;
+        background-color: #ffffff;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: center;
+     }
+     .c-pagination__item:last-child{
+        margin-right: 0;
+     }
+     .c-pagination__item a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: inherit;
+        font-size: clamp(1.3vw, 16px, 1.6vw);
+      }
+      .c-pagination__item a.is-current {
+        background-color: #3C2B1C;
+        color: #ffffff;
+        pointer-events: none;
+      }
+      
+      
+    .c-pagination__status{
+        display: flex;
+        font-family: "Roboto";
+        font-size: clamp(1.3vw, 16px, 1.6vw);
+        font-weight: 700;
+        align-items: center;
+    } 
+    .c-pagination__icon{
+            width: 24px;
+            height: 24px;
+            stroke: currentColor; 
+            vertical-align: middle;
+            margin-left: 1.9vw;
+            margin-right: 1vw;
+            overflow: visible;
+    
+    }
+    .c-pagination--sp{
+        display: none;
+    }
+
+}
+ 
+ /*   PC    */
+ @media screen and (min-width: 835px) {
+.c-pagination--wrapper{
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: center;
+    color: #707070;
+    align-items: baseline;
+    margin-bottom: 6.4vh;
+}
+.c-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+ }
+.c-pagination__item{
+    list-style: none;
+    margin-right: 1.5vw;
+    width: 35px;
+    aspect-ratio: 1 / 1;
+    border: 1px solid #707070;
+    background-color: #ffffff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+ }
+ .c-pagination__item:last-child{
+    margin-right: 0;
+ }
+ .c-pagination__item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+  }
+  .c-pagination__item a.is-current {
+    background-color: #3C2B1C;
+    color: #ffffff;
+    pointer-events: none;
+  }
+  
+  
+.c-pagination__status{
+    display: flex;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 700;
+    align-items: center;
+} 
+.c-pagination__icon{
+        width: 24px;
+        height: 24px;
+        stroke: currentColor; 
+        vertical-align: middle;
+        margin-left: 1vw;
+        margin-right: 1.7vw;
+        overflow: visible;
+
+}
+.c-pagination--sp{
+    display: none;
+}
+ }

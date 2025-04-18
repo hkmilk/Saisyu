@@ -4,7 +4,7 @@
             display: flex;
         }
         .search{
-            width:clamp(10vw, 216px, 50vw);
+            width:clamp(110px, 59vw, 216px);
             height: 4.6vh;
             position: absolute;
             left: 8.2%;
@@ -20,6 +20,7 @@
         }
         input[type=text]{
             color:#707070;
+            font-weight: 700;
         }
 }
 
@@ -42,6 +43,7 @@
         }
         input[type=text]{
             color:#707070;
+            font-weight: 700;
         }
 }
 
@@ -66,5 +68,6 @@
     }
     input[type=text]{
         color:#707070;
+        font-weight: 700;
     }
 }

@@ -1,44 +1,5 @@
    /*   SP    */
 @media screen and (max-width: 375px){
-  /* Hero Section */
-    .l-mainvisual {
-        grid-row: 2 / 3;
-        grid-column: 1 / 4;
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        aspect-ratio: 375 /285;
-
-        picture{
-            width: 100%;
-            height: 100%;
-         } 
-    
-    
-         img{
-            grid-row: 2 / 3;
-            grid-column: 1 / 4;
-            height: 100%;
-            object-fit: cover;
-            z-index: 10;
-         }
-    }
-    
-    .l-mainvisual__title {
-        top: 42.8%;
-        left: 6.6%;
-        z-index: 20;
-        position:absolute;
-        color: #FFFFFF;
-    }
-    .l-mainvisual__title > h2{
-        font-size: 36px ;
-        color: #FFFFFF ;
-        font-weight: 700;
-        line-height: 100%;
-    }
-
 
 /* section */
 .l-card__block {
@@ -225,45 +186,6 @@ p{
 
    /*   TB    */
 @media screen and (min-width: 376px)and (max-width: 834px){
-  /* Hero Section */
-    .l-mainvisual {
-        grid-row: 2 / 3;
-        grid-column: 1 / 4;
-        width:  100%;
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        height: 285px;
-        aspect-ratio: 834 /285;
-    
-        picture{
-           width: 100%;
-           height: 100%;
-        }
-    
-         img{
-            grid-row: 2 / 3;
-            grid-column: 1 / 4;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-           z-index: 10; 
-         }
-    }
-    
-    .l-mainvisual__title {
-        left: 10.3%;
-        z-index: 20;
-        position:absolute;
-        color: #FFFFFF;
-    }
-    .l-mainvisual__title > h2{
-        font-size: 36px ;
-        color: #FFFFFF ;
-    }
-
-
 /* section */
 .l-card__block{
     grid-row: 3 / 4;
@@ -453,48 +375,6 @@ h3{
    /*   PC    */
 
   @media screen and (min-width: 835px) {
-
-   /* Hero Section */
-.l-mainvisual {
-    grid-row: 2 / 3;
-	grid-column: 1 / 4;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    max-height: 530px;
-    aspect-ratio: 1553 /530;
-
-    picture{
-        grid-row: 2 / 3;
-        grid-column: 1 / 4;
-        width: 100%;
-    }
-
-    .l-mainvisual img{
-        grid-row: 2 / 3;
-        grid-column: 1 / 4;
-        max-width: none;
-        height: 100%;
-        object-fit: cover;
-        z-index: 10;
-        width: 100%;
-     }
-}
-
-.l-mainvisual__title {
-    left: 5.54%;
-    z-index: 20;
-    position:absolute;
-    font-size: 40px;
-    color: #FFFFFF;
-}
-.l-mainvisual__title > h2{
-    font-size: 40px;
-    color: #FFFFFF;
-}
-
 /* section */
 .l-card__block{
     grid-row: 3 / 4;

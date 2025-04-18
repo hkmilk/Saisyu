@@ -204,6 +204,11 @@
     background-color: #F2EDE9;
     padding-left: 12.5%;
     height: 100%;
+
+    &--archive{
+        grid-row: 1 / 7;
+        grid-column: 4 / 5;
+    }
 }
 .l-button__menu {
     font-size: 34px;
