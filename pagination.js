@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const pagination = document.querySelector(".c-pagination");
     const pathParts = window.location.pathname.split("/").filter(Boolean);
 
+<<<<<<< HEAD
     function togglePaginationByWindth(){
       const spPaginationElements = document.querySelectorAll('.js-sp-prev-jump, .js-sp-prev, .js-sp-next, .js-sp-next-jump');
       const pcPagination = document.querySelector('.c-pagination');
@@ -18,6 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   togglePaginationByWindth();
   window.addEventListener('resize', togglePaginationByWindth);
+=======
+
+
+>>>>>>> e7d5e24cb31ddc29c5d7c0ed2ec300f99fa828bc
 
     const path = window.location.pathname.replace(/\/$/, "");
      
