@@ -4,20 +4,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const pathParts = window.location.pathname.split("/").filter(Boolean);
 
 
-    let currentPage ="1";
 
-    if (pathParts.includes("page")) {
-        const pageIndex = pathParts.indexOf("page") ;
-        const nextPart = pathParts[pageIndex + 1];
-        if (!isNaN(nextPart)) {
-            currentPage = nextPart;
-        }
-    }
 
     const path = window.location.pathname.replace(/\/$/, "");
-    if (path === "/archive" || path === "/archive/index.html") {
-        currentPage = "1";
-    } 
+     
+    let currentPage ="1";
+
+    if (path.includes("page-")) {
+      const match= path.match(/page-(\d+)\.html/);
+      if (match) {
+          currentPage = match[1];
+      }
+   } else if  (path === "/archive" || path === "/archive.html") {
+       currentPage = "1";
+   }  
 
     if(currentPageE1) {
         currentPageE1.textContent = currentPage;
@@ -33,14 +33,16 @@ if (pagination) {
   pagination.innerHTML = "";
 
   const current = parseInt(currentPage);
-  const total = 10; 
+  const total = 10;
+  
+  
   const prevPage = current - 1;
   const nextPage = current + 1;
 
 
   const prev = document.createElement("li");
   prev.innerHTML = `
-    <a href="${current === 1 ? '#' : (prevPage === 1 ? '/archive/' : `/page/${prevPage}/`)}" 
+    <a href="${current === 1 ? '#' : (prevPage === 1 ? 'archive.html' : `page-${prevPage}.html#`)}" 
        class="c-pagination__prev ${current === 1 ? 'is-disabled' : ''}" 
        aria-label="前のページ">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
@@ -50,13 +52,15 @@ if (pagination) {
       </svg>
     </a>`;
   pagination.appendChild(prev);
+  
+  const start = current;
+  const end = Math.min(total, start + 8);
 
-
-  for (let i = 1; i <= total; i++) {
+  for (let i = start; i <= end; i++) {
     const li = document.createElement("li");
     li.className = "c-pagination__item";
     const a = document.createElement("a");
-    a.href = i === 1 ? "/archive/" : `/page/${i}/`;
+    a.href = i === 1 ? "archive.html" : `page-${i}.html`;
     a.textContent = i;
     if (i === current) {
       a.classList.add("is-current");
