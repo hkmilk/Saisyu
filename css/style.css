@@ -1170,7 +1170,7 @@ a {
     background-size: 16px 16px;
     background-color: #FFFFFF;
     padding-left: 32px;
-    line-height: 4, 6vh;
+    line-height: 4.6vh;
     vertical-align: middle;
   }
   input[type=text] {
@@ -1279,6 +1279,7 @@ a {
     margin-top: 12px;
     z-index: 40;
     color: #FFFFFF;
+    font-weight: 700;
   }
   .c-mainvisual__title > h2 {
     font-size: 36px;
@@ -1340,7 +1341,9 @@ a {
   .c-mainvisual__title p {
     font-size: 16px;
     margin-left: 19px;
+    padding-top: 8px;
     z-index: 40;
+    font-weight: 700;
   }
   .c-mainvisual__title > h2 {
     font-size: 36px;
@@ -1408,12 +1411,14 @@ a {
   }
   .c-mainvisual__title--archive {
     display: flex;
-    align-items: baseline;
+    align-items: center;
   }
   .c-mainvisual__title > p {
     font-size: 16px;
+    font-weight: 700;
     margin-left: 19px;
     z-index: 40;
+    padding-top: 16px;
   }
   .c-mainvisual__title > h2 {
     font-size: 40px;
@@ -1784,6 +1789,10 @@ a {
   .c-pagination__item:last-child {
     margin-right: 0;
   }
+  .c-pagination__item:hover {
+    background-color: #3C2B1C;
+    color: #ffffff;
+  }
   .c-pagination__item a {
     display: flex;
     justify-content: center;
@@ -1792,6 +1801,7 @@ a {
     height: 100%;
     text-decoration: none;
     color: inherit;
+    font-weight: 700;
     font-size: clamp(1.3vw, 16px, 1.6vw);
   }
   .c-pagination__item a.is-current {
@@ -1817,6 +1827,17 @@ a {
   }
   .c-pagination--sp {
     display: none;
+  }
+}
+@media screen and (max-width: 570px) {
+  .c-pagination__status {
+    display: none;
+  }
+  .c-pagination--wrapper {
+    justify-content: space-between;
+  }
+  .c-pagination__content {
+    display: flex;
   }
 }
 /*   PC    */
@@ -1851,6 +1872,10 @@ a {
   .c-pagination__item:last-child {
     margin-right: 0;
   }
+  .c-pagination__item:hover {
+    background-color: #3C2B1C;
+    color: #ffffff;
+  }
   .c-pagination__item a {
     display: flex;
     justify-content: center;
@@ -1859,6 +1884,9 @@ a {
     height: 100%;
     text-decoration: none;
     color: inherit;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
   }
   .c-pagination__item a.is-current {
     background-color: #3C2B1C;

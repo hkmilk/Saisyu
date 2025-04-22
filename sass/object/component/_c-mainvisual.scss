@@ -61,6 +61,7 @@
         margin-top: 12px;
         z-index: 40;
         color: #FFFFFF;
+        font-weight: 700;
     }
     }
 
@@ -134,7 +135,9 @@
     p {
         font-size: 16px;
         margin-left: 19px;
+        padding-top: 8px;
         z-index: 40;
+        font-weight: 700;
     }
     }
 
@@ -209,13 +212,15 @@
 
     &--archive{
         display: flex;
-        align-items: baseline;
+        align-items: center;
     }
 
     >p {
         font-size: 16px;
+        font-weight: 700;
         margin-left: 19px;
         z-index: 40;
+        padding-top: 16px;
     }
 }
 .c-mainvisual__title > h2{

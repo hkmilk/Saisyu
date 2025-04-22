@@ -1,0 +1,24 @@
+   /*   PC    */
+   @media screen and (min-width:  835px) {
+    .p-grid-container{
+        display: grid;
+        grid-template-columns: 5.2% minmax(0, 1fr) 5.2% 19.1vw;
+        grid-template-rows:
+        21.7vh 
+        50.0vh
+        auto
+        auto
+        auto
+        50.0vh
+        auto
+        47.8vh
+        81.1vh
+        auto
+        28.7vh
+        38.1vh
+        22.5vh
+        29.8vh
+        15.0vh;
+        min-height: 100vh;
+    }
+}
