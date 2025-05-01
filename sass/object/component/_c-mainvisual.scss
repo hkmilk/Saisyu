@@ -15,7 +15,13 @@
             min-height: 285px;
             height: 100%;
     
-        }   
+        } 
+        &--single{
+            aspect-ratio: 375 / 225;
+            height: 100%;
+           min-height: 225px;
+           object-fit: cover;
+      }
 
         &__overlay{
             position: absolute;
@@ -30,6 +36,11 @@
             height: 100%;
             background-position: left;
          } 
+
+        &__image--single{
+            width: 100%;
+            height: 100%;
+         }
     
     
          &__image img{
@@ -40,6 +51,14 @@
             object-fit: cover;
             z-index: 10;
          }
+    }
+   
+    .c-mainvisual__bg{
+        background-image: url('../../../images/black-steel-lamp-post-1070945.png');
+        background-position: 65% top;
+        background-size:cover;
+        width: 100%;
+        height: 22.5vh;
     }
     
     .c-mainvisual__title {
@@ -56,6 +75,13 @@
         align-items: center;
         color: #FFFFFF;
     }
+    &--single{
+        top: 45%;
+        left: 6.6%;
+        display: block;
+        align-items: center;
+        color: #FFFFFF;
+    }
     p {
         font-size: 16px;
         margin-top: 12px;
@@ -67,6 +93,13 @@
 
     .c-mainvisual__title > h2{
         font-size: 36px ;
+        color: #FFFFFF ;
+        font-weight: 700;
+        line-height: 100%;
+    }
+
+    .c-mainvisual__title--single h1{
+        font-size: 9.5vw;
         color: #FFFFFF ;
         font-weight: 700;
         line-height: 100%;
@@ -92,7 +125,13 @@
             min-height: 239px;
             height: 100%;
     
-        }    
+        } 
+
+       &--single{
+           aspect-ratio: 1553 / 505;
+           height: 100%;
+     }
+
 
         &__overlay{
             position: absolute;
@@ -145,6 +184,13 @@
         font-size: 36px ;
         color: #FFFFFF ;
     }
+    .c-mainvisual__title--single h1{
+        font-size: clamp(38px ,7.0vw, 60px);
+        color: #FFFFFF ;
+        font-weight: 700;
+        line-height: 100%;
+    }
+   
 }
 
    /*   PC    */
@@ -170,6 +216,11 @@
 
     }
 
+    &--single{
+        aspect-ratio: 1553 / 500;
+        height: 100%;
+    }
+
     &__overlay{
         position: absolute;
         width: 100%;
@@ -187,7 +238,12 @@
         height: 100%;
         object-fit: cover;
     }
-
+    &__image--single{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
     &__image img{
         grid-row: 2 / 3;
         grid-column: 1 / 4;
@@ -228,4 +284,5 @@
     color: #FFFFFF;
     align-items: flex-end;
 }
+
 }

@@ -9,6 +9,11 @@
                     margin-top: 3.2vh;
                     display: block;
                     color: #3C2A10;
+
+                    &--single{
+                      margin-top: 3.4vh;
+                      margin-bottom: 3.6vh;
+                    }
         
                   h2{
                     font-size: 28px;
@@ -20,6 +25,10 @@
                         margin-top: 25px;
                     }
        }
+
+       .c-section--single > p{
+        margin-top: 25px;
+      }
    }
 
    /*   TB    */
@@ -32,9 +41,15 @@
                 position: relative;
                 display: block;
                 color: #3C2A10;
+                margin-top: 6.3vh;
+
+
+            &--single{
+              margin-top: 6.0vh;
+              margin-bottom: 6.2vh;
+            }
     
               h2{
-                margin-top: 6.3%;
                 font-size: 36px;
                 color: #3C2A10;
               }
@@ -44,6 +59,9 @@
                     margin-top: 20px;
                 }
    }
+   .c-section--single > p{
+    margin-top: 55px;
+  }
 }
     /*   PC    */
     @media screen and (min-width: 835px) {
@@ -55,9 +73,14 @@
             position: relative;
             display: block;
             color: #3C2A10;
+            margin-top: 6.3vh;
+
+            &--single{
+              margin-top: 6.3vh;
+              margin-bottom: 6.0vh;
+            }
 
           h2{
-            margin-top: 6.3%;
             font-size: 36px;
             color: #3C2A10;
           }
@@ -66,5 +89,8 @@
                 font-size: 16px;
                 margin-top: 20px;
             }
+        }
+        .c-section--single > p{
+          margin-top: 57px;
         }
 }

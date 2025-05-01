@@ -1,0 +1,18 @@
+/*   PC    */
+@media screen and (min-width:  835px) {
+    .c-eyecatch{
+        grid-column: 2 /3 ;
+        grid-row: 8 / 9 ;
+        display: flex;
+        justify-content: center;
+
+        img{
+            width: 35.0vw;
+            height: auto;
+            object-fit: cover;
+            object-position: bottom;
+            aspect-ratio: 581 / 358 ;
+        }
+
+    }
+}

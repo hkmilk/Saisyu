@@ -1,0 +1,108 @@
+   /*   SP    */
+   @media screen and (max-width: 375px){
+    .c-single-list-wrapper{
+        grid-column: 2 / 3 ;
+        grid-row: 9 / 10 ;
+        padding: 33px 0 26px 0;
+        color: #3C2A10;
+        font-size: 16px;
+        font-weight: 400;
+
+    }
+    .c-single-list ol,
+    .c-single-list__item    {
+        padding-bottom: 1.7vh;
+
+    }
+    .c-single-list:nth-of-type(2){
+        padding-top: 40px;
+    }
+
+    .c-single-list ol{
+        list-style: decimal inside;
+        margin: 0;
+    }
+    .c-single-list ol:nth-of-type(2){
+        padding-left: 6.8rem;
+    }
+    .c-single-list__item  {
+        list-style: none;
+    }
+    .c-single-list__item:nth-of-type(2){
+        margin-left: 1.8rem;
+    }
+
+   }
+
+/*   TB    */
+@media screen and (min-width: 376px)and (max-width: 834px){
+    .c-single-list-wrapper{
+        grid-column: 2 / 3 ;
+        grid-row: 9 / 10 ;
+        padding: 6.1vh 0 5.6vh 0;
+        color: #3C2A10;
+        font-size: 16px;
+        font-weight: 400;
+
+    }
+    .c-single-list ol,
+    .c-single-list__item    {
+        padding-left: 5rem;
+        padding-bottom: 1.7vh;
+
+    }
+    .c-single-list:nth-of-type(2){
+        padding-top: 5.7vh;
+    }
+
+    .c-single-list ol{
+        list-style: decimal inside;
+        margin: 0;
+    }
+    .c-single-list ol:nth-of-type(2){
+        padding-left: 6.8rem;
+    }
+    .c-single-list__item  {
+        list-style: none;
+    }
+    .c-single-list__item:nth-of-type(2){
+        margin-left: 1.8rem;
+    }
+}
+
+/*   PC    */
+@media screen and (min-width:  835px) {
+    .c-single-list-wrapper{
+        grid-column: 2 / 3 ;
+        grid-row: 9 / 10 ;
+        padding: 5.5vh 0;
+        color: #3C2A10;
+        font-size: 16px;
+        font-weight: 400;
+
+    }
+    .c-single-list ol,
+    .c-single-list__item    {
+        padding-left: 5.0vw;
+        padding-bottom: 1.7vh;
+
+    }
+    .c-single-list:nth-of-type(2){
+        padding-top: 4.0vh;
+    }
+
+    .c-single-list ol{
+        list-style: decimal inside;
+        margin: 0;
+    }
+    .c-single-list ol:nth-of-type(2){
+        padding-left: 6.8rem;
+    }
+    .c-single-list__item  {
+        list-style: none;
+    }
+    .c-single-list__item:nth-of-type(2){
+        margin-left: 1.8rem;
+    }
+
+}

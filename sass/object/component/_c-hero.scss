@@ -1,0 +1,51 @@
+   /*   SP    */
+   @media screen and (max-width: 375px){
+    .c-hero-image{
+        grid-column: 2 /3;
+        grid-row: 6 /7;
+        height: 100%;
+        width: 100%;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom;
+        }
+    }
+   }
+
+/*   TB    */
+@media screen and (min-width: 376px)and (max-width: 834px){
+    .c-hero-image{
+        grid-column: 2 /3;
+        grid-row: 6 /7;
+        height: 100%;
+        width: 100%;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom;
+        }
+    }
+}
+
+/*   PC    */
+ @media screen and (min-width:  835px) {
+    .c-hero-image{
+        grid-column: 2 /3;
+        grid-row: 6 /7;
+        height: 100%;
+        width: 100%;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom;
+        }
+    }
+
+ }

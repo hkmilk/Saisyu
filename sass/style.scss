@@ -30,7 +30,15 @@
 @use "../sass/object/component/c-section";
 @use "../sass/object/component/c-card";
 @use "../sass/object/component/c-pagination";
-
+@use "../sass/object/component/c-singleTitle";
+@use "../sass/object/component/c-blockquote";
+@use "../sass/object/component/c-hero";
+@use "../sass/object/component/c-singleArticle";
+@use "../sass/object/component/c-eyecatch";
+@use "../sass/object/component/c-singleContainer";
+@use "../sass/object/component/c-singleList";
+@use "../sass/object/component/c-singleCode";
+@use "../sass/object/component/c-singleTable";
 
 //-----------------------------------------------------------------
 //Project
@@ -41,5 +49,6 @@
 //-----------------------------------------------------------------
 //Utility
 //-----------------------------------------------------------------
-
-
+@use "../sass/utility/u-button";
+@use "../sass/utility/u-text";
+@use "../sass/utility/u-hidden";

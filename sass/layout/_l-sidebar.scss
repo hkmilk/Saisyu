@@ -209,6 +209,10 @@
         grid-row: 1 / 7;
         grid-column: 4 / 5;
     }
+    &--single{
+        grid-row: 1 / 15;
+        grid-column: 4 / 5;
+    }
 }
 .l-button__menu {
     font-size: 34px;

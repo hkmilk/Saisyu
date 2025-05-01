@@ -1,0 +1,126 @@
+   /*   SP    */
+   @media screen and (max-width: 375px){
+       .c-single-article-image{
+        grid-column: 2 / 3;
+        grid-row: 7 / 8;
+       display: grid;
+       grid-template-rows: auto auto auto;
+       gap: 3.0vh;
+       padding: 3.0vh 0;
+       color: #3C2A10;
+      
+   }
+   .c-single-article-image__container{
+       display: flex;
+       gap: 1.0vh;
+       align-items: stretch;
+       flex-grow: 1;
+
+
+    >img{
+        width: 45vw;
+        height: 89px;
+        object-fit: cover;
+        aspect-ratio: 144 / 89;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+   }
+   .c-single-article-image__container:nth-of-type(3){
+    justify-content: center;
+   }
+   .c-single-article-image__container:nth-of-type(3) img {
+    width: 79.7%;
+    height: auto;
+    aspect-ratio: 267 / 166;
+  }
+
+   }
+
+/*   TB    */
+@media screen and (min-width: 376px)and (max-width: 834px){
+    .c-single-article-image{
+        grid-column: 2 / 3;
+        grid-row: 7 / 8;
+       display: grid;
+       grid-template-rows: auto auto auto;
+       padding-top: 6.0vh;
+       color: #3C2A10;
+       
+       > *:not(:nth-of-type(2)){
+       margin-bottom: 11.7vh; 
+       }
+
+       >:nth-of-type(2) {
+        margin-bottom: 6.0vh;
+       } 
+   }
+   .c-single-article-image__container{
+       display: flex;
+       gap: 2.1vh;
+       align-items: stretch;
+       flex-grow: 1;
+
+
+    >img{
+        width: clamp(80px,43.0vw, 306px);
+        height: 18.0vh;
+        object-fit: cover;
+        aspect-ratio: 306 / 189;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+ }
+ .c-single-article-image__container:nth-of-type(3){
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 241px;
+  }
+  .c-single-article-image__container:nth-of-type(3) img {
+    width: 81.3%;
+    height: auto;
+    aspect-ratio: 581 / 358;
+  }
+
+}
+
+/*   PC    */
+@media screen and (min-width:  835px) {
+    .c-single-article-image{
+        grid-column: 2 / 3;
+        grid-row: 7 / 8;
+       display: grid;
+       grid-template-rows: auto auto auto;
+       gap: 6.0vh;
+       padding: 6.0vh 0;
+       color: #3C2A10;
+      
+   }
+   .c-single-article-image__container{
+       display: flex;
+       gap: 4.0vh;
+       align-items: stretch;
+       flex-grow: 1;
+
+
+    >img{
+        width: 30.0vw;
+        height: clamp(200px,20.8vw,358px);
+        object-fit: cover;
+        aspect-ratio: 581 / 358;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+   }
+   .c-single-article-image__container:last-child{
+    justify-content: center;
+   }
+
+}

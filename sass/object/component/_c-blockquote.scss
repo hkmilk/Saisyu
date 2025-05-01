@@ -1,0 +1,81 @@
+   /*   SP    */
+   @media screen and (max-width: 375px){
+    .c-blockquote{
+        grid-column: 2 / 3 ;
+        grid-row:  5 / 6;
+        background-color: #F5F5F5;
+        padding: 30px 18px;
+        font-weight: 400;
+        margin-bottom: 3.0vh;
+
+        p{
+            color: #3C2A10;
+            font-size: 16px;
+        }
+
+    }
+
+        cite{
+            text-decoration: underline;
+            color: #4A6C9B;
+            font-style: normal;
+        }
+   }
+
+/*   TB    */
+@media screen and (min-width: 376px)and (max-width: 834px){
+    .c-blockquote{
+        grid-column: 2 / 3 ;
+        grid-row:  5 / 6;
+        background-color: #F5F5F5;
+        padding: 5.0vh;
+        font-weight: 400;
+        margin-bottom: 6.0vh;
+
+        p{
+            color: #3C2A10;
+            font-size: 16px;
+        }
+
+    }
+    .c-quote__source{
+        margin-top: 6.1vh;
+        margin-bottom: 0.7vh;
+
+        cite{
+            text-decoration: underline;
+            color: #4A6C9B;
+            font-style: normal;
+        }
+    }
+}
+
+
+/*   PC    */
+@media screen and (min-width:  835px) {
+    .c-blockquote{
+        grid-column: 2 / 3 ;
+        grid-row:  5 / 6;
+        background-color: #F5F5F5;
+        padding: 5.0vh;
+        font-weight: 400;
+        margin-bottom: 6.0vh;
+
+        p{
+            color: #3C2A10;
+            font-size: 16px;
+        }
+
+    }
+    .c-quote__source{
+        margin-top: 6.1vh;
+
+        cite{
+            text-decoration: underline;
+            color: #4A6C9B;
+            font-style: normal;
+        }
+    }
+
+
+}

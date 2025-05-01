@@ -1,0 +1,39 @@
+   /*   SP    */
+   @media screen and (max-width: 375px){
+    .u-single-bold{
+        grid-column: 2 / 3 ;
+        grid-row: 13 / 14 ;
+        font-size: clamp(9px, 4.0rem, 16px);
+        color: #3C2A10;
+        font-weight: 700;
+        padding: 3.1vh 0 6.9vh 0;
+    }
+
+   } 
+ 
+ /*   TB    */
+ @media screen and (min-width: 376px)and (max-width: 834px){
+    .u-single-bold{
+        grid-column: 2 / 3 ;
+        grid-row: 13 / 14 ;
+        font-size: 16px;
+        color: #3C2A10;
+        font-weight: 700;
+        padding: 6.1vh 0 14.9vh 0;
+    }
+
+ }
+ 
+ 
+ /*   PC    */
+ @media screen and (min-width:  835px) {
+    .u-single-bold{
+        grid-column: 2 / 3 ;
+        grid-row: 13 / 14 ;
+        font-size: 16px;
+        color: #3C2A10;
+        font-weight: 700;
+        padding: 6.1vh 0 27.4vh 0;
+    }
+
+ }

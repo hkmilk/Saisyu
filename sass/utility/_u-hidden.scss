@@ -1,0 +1,21 @@
+   /*   SP    */
+   @media screen and (max-width: 375px){
+    .u-hidden-sp{
+        display: none;
+    }
+   }
+
+
+/*   TB    */
+@media screen and (min-width: 376px)and (max-width: 834px){
+.u-hidden-pc { 
+    display: none;
+  }
+}
+
+/*   PC    */
+@media screen and (min-width:  835px) {
+    .u-hidden-pc { 
+        display: none;
+      }
+}
